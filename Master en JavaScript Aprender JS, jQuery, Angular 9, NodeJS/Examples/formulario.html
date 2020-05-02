@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"/>
+    <title>Ejercicio Doom, eventos y fuciones</title>
+    <script type="text/javascript" src="JS Folder/ejercicio-dom.js"></script>
+    <style>
+        .box{
+            width: 250px;
+            height: 250px;
+            margin: 20px;
+            float: left;
+        }
+        .dashed{
+            border: 3px dashed firebrick;
+            padding-left: 4px;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        1. Formulario campos: Nombre, Apellido y edad
+        2. Button de enviar formulario: evento submit
+        3. Mostrar datos por pantalla
+        4. Tener un boton que muestre los datos del formulario
+    -->
+    <h1>Ejercicio Doom, eventos y fuciones (MAster JS)</h1>
+<div class="box" id="divForm">
+    <form action="" method="POST" id="formulario" onsubmit="return false">
+        <label for="nombre">Nombre:</label></br>
+        <input type="text" name="nombre" id="nombre"/>
+    </br>
+        <label for="apellido">Apellido:</label></br>
+        <input type="text" name="apellido" id="apellido"/>
+    </br>    
+        <label for="edad">Edad:</label></br>
+        <input type="text" name="edad" id="edad"/>
+    </br>
+        <input type="submit" value="Enviar" id="submit"/>
+    </form>
+</div>
+<div class="box dashed" id="divShow">
+    <h1>Informacion Usuario</h1>
+    <hr>
+    <label id="nombreBox">Nombre:<span></span></label></br>
+    <label id="apellidoBox">Apellido:<span></span></label></br>    
+    <label id="edadBox">Edad:<span></span></label></br>
+</div>
+
+</body>
+</html>
