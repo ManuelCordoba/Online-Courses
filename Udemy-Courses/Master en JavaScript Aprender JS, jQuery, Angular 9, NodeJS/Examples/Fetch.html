@@ -1,17 +1,29 @@
 <!DOCTYPE html>
-<html lang= "es">
-    <head>
-        <meta charset="utf-8"/>
-        <title> Consumo de servicio REST con Fetch</title>
-      </head>
+<html lang="es">
 
-    <body>
-        <h1>Listado Usuarios</h1>
-        <div id="boxUsu">
+<head>
+    <meta charset="utf-8" />
+    <title> Consumo de servicio REST con Fetch</title>
+</head>
 
-            <ul id="list"></ul>
-        </div>
-    </body>
+<body>
+    <h1>Listado Usuarios</h1>
+    <div id="usuarios">
+        <span id="loading"> CARGANDO...</span>
+        <ul id="list"></ul>
 
-    <script type="text/javascript" src="JS Folder/JSFetch.js"> </script>
+    </div>
+    </br>
+    <div id="usuario">
+
+        <button id="atras">Atras</button>
+        <button id="adelante">Adelante</button>
+        <h2 id="nom"></h2>
+        <img id="foto">
+        <label id = "usu"></label>
+    </div>
+</body>
+
+<script type="text/javascript" src="JS Folder/JSFetch.js"> </script>
+
 </html>
